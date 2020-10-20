@@ -1,0 +1,13 @@
+<!--pages/feedback/index.wxml-->
+<textarea class="content" 
+value="{{feedbackContent}}"
+bindinput="handleInput"></textarea>
+<view class="uldwrap">
+    <Uploadfile bindselectimg="handleSelectImg"></Uploadfile>
+</view>
+<button  type="primary" plain="default" open-type="none"
+ style="width:90vw;"
+ bindtap="handleSubmit">
+    提交
+</button>
+  

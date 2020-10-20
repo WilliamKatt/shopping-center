@@ -1,0 +1,27 @@
+<!--创建自定义组件步骤
+1. 在项目根目录下创建components目录作为所有自定义组件的根目录
+2. 在components下创建具体的组件目录，比如Tabs
+3. 右键点击Tabs目录，选择创建Component,弹出一个命名文件，取名与Tabs一样
+   回车，等待1秒钟，会自定创建4个文件
+   
+在页面上加载自定义组件的步骤
+1. 在页面的json文件中配置自定义组件的路径,在页面的json文件中
+    在usingComponents里面增加一个属性:"Tabs":"../../components/Tabs/Tabs"
+    属性名就是组件名，路径采用的是相对路径
+    
+2. 在页面中使用组件，直接使用标签名做标签对,如<Tabs></Tabs>-->
+
+
+<view class="tabs">
+    <view class="tabs_titles">
+        <view class="tabs_item {{item.isActive?'active':''}}"
+        wx:for="{{tabs}}" wx:key="id" bindtap="handelItemTap"
+        data-index="{{index}}">
+        {{item.name}}
+        </view>
+    </view>
+    <!--slot相当于占位符，会被父级页面的<Tabs>内容</Tabs>
+    里的内容替换-->
+    <view class="tabs_content"><slot></slot></view>
+</view>
+  

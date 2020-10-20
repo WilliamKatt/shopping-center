@@ -1,0 +1,35 @@
+/* pages/order/index.wxss */
+.goodslistwrap .glitem {
+  display: flex;
+  border-bottom: 2rpx solid #ccc;
+}
+.goodslistwrap .glitem .imgwrap {
+  flex: 1;
+}
+.goodslistwrap .glitem .imgwrap .logo {
+  width: 100%;
+}
+.goodslistwrap .glitem .detail {
+  flex: 3;
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10rpx;
+  font-size: 24rpx;
+}
+.goodslistwrap .glitem .detail .status {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.goodslistwrap .glitem .detail .status button {
+  margin: 0 0 0 20rpx;
+  width: 140rpx;
+  height: 40rpx;
+  font-size: 20rpx;
+  color: var(--themeColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,6 @@
+<!--pages/ad/index.wxml-->
+<button  plain open-type="share" style="margin-top:10rpx;">
+    分享
+</button>
+  
+

@@ -1,0 +1,14 @@
+<!--pages/search/index.wxml-->
+<view class="inputwrap">
+    <input placeholder="请输入关键词" value="{{inputValue}}" bindinput="handleInput"/>
+</view>
+<view class="listwrap">
+    <view class="row {{goodsList.length>=2&&index<=goodsList.length-2?'bdbtm-ccc':''}}" wx:for="{{goodsList}}" wx:key="goods_id">
+        <image class="thumbnail" src="{{item.goods_smail_logo}}" mode="widthFix"></image>
+        <view class="right">
+            <view class="goodsname">{{item.goods_name}}</view>
+            <view class="goodsprice">￥{{item.goods_price}}.00</view>
+        </view>
+    </view>
+</view>
+

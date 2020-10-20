@@ -1,0 +1,29 @@
+<si></si>
+<view class="catecontainer">
+    <scroll-view class="leftmenu" scroll-y>
+        <view wx:for="{{leftCateList}}" wx:key="*this"
+        class="{{index==currentIndex?'active':''}}"
+        bindtap="clickLeftItem"
+        data-index="{{index}}">{{item}}</view>
+    </scroll-view>
+    <scroll-view class="rightmenu"  scroll-y scroll-top="{{scrollTop}}">
+        <!-- view{$}*50-->
+        <view class="rightmenugroup" wx:for="{{rightCateList}}"
+        wx:key="cat_id">
+            <view class="itemtitle">
+                <text>/</text>
+                <text>{{item.cat_name}}</text>
+                <text>/</text>
+            </view>
+            <view class="itemlist">
+                <navigator url="/pages/goods_list/index?cat_id={{o.cat_id}}" wx:for="{{item.children}}"
+                wx:key="cat_id" wx:for-item="o" wx:for-index="i">
+                    <image src="{{o.cat_icon}}" mode="widthFix"/>
+                    <view>{{o.cat_name}}</view>
+                </navigator>
+            </view>
+              
+        </view>
+    </scroll-view>
+</view>
+  

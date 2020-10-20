@@ -1,0 +1,101 @@
+<searchinput></searchinput>
+<view class="shouyeswiper">
+  <swiper indicator-dots  autoplay
+    interval="3000" circular>
+    <swiper-item wx:for="{{swiperList}}" wx:key="id">
+      <navigator  url="{{item.naviurl}}" >
+      <image url="" src="{{item.imgurl}}" mode="widthFix"/>
+    </navigator>
+    </swiper-item> 
+  </swiper>
+</view>
+
+<view class="shouyedaohang">
+  <navigator url="/pages/category/index" >
+    <image src="http://122.112.158.78/shouyedaohang/cate.png" mode="widthFix"/>
+  </navigator>
+  <navigator url="/pages/goods_list/index" >
+    <image src="http://122.112.158.78/shouyedaohang/chaoshigou.png" mode="widthFix"/>
+  </navigator>
+  <navigator url="/pages/goods_list/index" >
+    <image src="http://122.112.158.78/shouyedaohang/miaoshapai.png" mode="widthFix"/>
+  </navigator>
+  <navigator url="/pages/goods_list/index" >
+    <image src="http://122.112.158.78/shouyedaohang/muyingpin.png" mode="widthFix"/>
+  </navigator>
+</view>
+  
+<view class="shouyelouceng">
+  <view class="shouyeloucenggroup">
+    <view class="shouyeloucengtitle">
+      <image src="http://122.112.158.78/shouyelouceng/1.png" mode="widthFix"/>
+    </view>
+    <view class="shouyeloucengcontent">
+      <navigator url="" >
+      <image src="http://122.112.158.78/shouyelouceng/11.png" mode="widthFix"/>
+      </navigator>
+      <navigator url="" >
+      <image src="http://122.112.158.78/shouyelouceng/12.png" mode="scaleToFill"/>
+      </navigator>
+      <navigator url="" >
+      <image src="http://122.112.158.78/shouyelouceng/13.png" mode="scaleToFill"/>
+      </navigator>
+      <navigator url="" >
+      <image src="http://122.112.158.78/shouyelouceng/14.png" mode="scaleToFill"/>
+      </navigator>
+      <navigator url="" >
+      <image src="http://122.112.158.78/shouyelouceng/15.png" mode="scaleToFill"/>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="shouyeloucenggroup">
+    <view class="shouyeloucengtitle">
+      <image src="http://122.112.158.78/shouyelouceng/2.png" mode="widthFix"/>
+    </view>
+    <view class="shouyeloucengcontent">
+      <navigator url="" >
+      <image src="http://122.112.158.78/shouyelouceng/21.png" mode="widthFix"/>
+      </navigator>
+      <navigator url="" >
+      <image src="http://122.112.158.78/shouyelouceng/22.png" mode="scaleToFill"/>
+      </navigator>
+      <navigator url="" >
+      <image src="http://122.112.158.78/shouyelouceng/23.png" mode="scaleToFill"/>
+      </navigator>
+      <navigator url="" >
+      <image src="http://122.112.158.78/shouyelouceng/24.png" mode="scaleToFill"/>
+      </navigator>
+      <navigator url="" >
+      <image src="http://122.112.158.78/shouyelouceng/25.png" mode="scaleToFill"/>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="shouyeloucenggroup">
+    <view class="shouyeloucengtitle">
+      <image src="http://122.112.158.78/shouyelouceng/3.png" mode="widthFix"/>
+    </view>
+    <view class="shouyeloucengcontent">
+      <navigator url="" >
+      <image src="http://122.112.158.78/shouyelouceng/31.png" mode="widthFix"/>
+      </navigator>
+      <navigator url="" >
+      <image src="http://122.112.158.78/shouyelouceng/32.png" mode="scaleToFill"/>
+      </navigator>
+      <navigator url="" >
+      <image src="http://122.112.158.78/shouyelouceng/33.png" mode="scaleToFill"/>
+      </navigator>
+      <navigator url="" >
+      <image src="http://122.112.158.78/shouyelouceng/34.png" mode="scaleToFill"/>
+      </navigator>
+      <navigator url="" >
+      <image src="http://122.112.158.78/shouyelouceng/35.png" mode="scaleToFill"/>
+      </navigator>
+    </view>
+  </view>
+</view>
+  
+
+  
+  

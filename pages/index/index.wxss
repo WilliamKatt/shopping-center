@@ -1,0 +1,35 @@
+.shouyeswiper swiper {
+  width: 100%;
+  height: calc(100vw*352/1152);
+}
+.shouyeswiper swiper image {
+  width: 100%;
+}
+.shouyedaohang {
+  display: flex;
+}
+.shouyedaohang navigator {
+  flex: 1;
+  padding: 20rpx;
+}
+.shouyedaohang navigator image {
+  width: 100%;
+}
+.shouyelouceng .shouyeloucenggroup .shouyeloucengcontent {
+  overflow: hidden;
+}
+.shouyelouceng .shouyeloucenggroup .shouyeloucengcontent navigator {
+  float: left;
+  width: 33.33%;
+}
+.shouyelouceng .shouyeloucenggroup .shouyeloucengcontent navigator:nth-last-child(-n+4) {
+  height: 27.72711207vw;
+  padding-left: 6rpx;
+}
+.shouyelouceng .shouyeloucenggroup .shouyeloucengcontent navigator:nth-last-child(-n+2) {
+  padding-top: 6rpx;
+}
+.shouyelouceng .shouyeloucenggroup .shouyeloucengcontent navigator image {
+  width: 100%;
+  height: 100%;
+}

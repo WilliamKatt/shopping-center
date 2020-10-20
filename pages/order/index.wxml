@@ -1,0 +1,27 @@
+<tabs tabs="{{tabs}}" bindclickitem="handleClickItem">
+<view class="goodslistwrap">
+    <view class="glitem" catchtap="handleItem" wx:for="{{orderList}}"
+    wx:key="order_id" data-order="{{item}}">
+        <view class="imgwrap">
+            <image class="logo" src="{{item.goods[0].goods_small_logo}}" mode="widthFix"/>
+        </view>
+        <view class="detail">
+            <view class="ordernumber">{{item.order_number}}</view>
+            <view class="price">¥{{item.order_price}}.00</view>
+            <view class="status">
+            <button wx:if="{{item.order_pay==0}}"
+            catchtap="handlePay" data-order="{{item}}">支付</button>
+            <text>{{item.statusName}}</text>
+            </view>
+            <view class="date">{{item.create_time}}</view>
+        </view>
+    </view>
+</view>
+<!--这里的内容会替换掉组件中slot的标签
+<block wx:if="{{tabs[0].isActive}}">
+    1
+</block>
+<block wx:elif="{{tabs[1].isActive}}">2</block>
+<block wx:elif="{{tabs[2].isActive}}">3</block>
+<block wx:else>4</block>-->
+</tabs>

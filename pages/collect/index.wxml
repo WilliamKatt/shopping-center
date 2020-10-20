@@ -1,0 +1,18 @@
+<tabs tabs="{{tabs}}" bindclickitem="handleClickItem">
+    <view class="collectwrap">
+        <view class="row {{goodsList.length>1&&index<goodsList.length-1?'bdbtm-ccc':''}}" bindtap="handleToGoodsDetail"
+        wx:for="{{goodsList}}" wx:key="goods_id">
+            <image class="logo" 
+            src="{{item.pics[0].pics_sma}}" 
+            mode="widthFix"/>
+            <view class="right">
+                <view class="goodsname">
+                    {{item.goods_name}}
+                </view>
+                <view class="goodsprice">
+                    ¥{{item.goods_price}}.00
+                </view>
+            </view>
+        </view>
+    </view>
+</tabs>

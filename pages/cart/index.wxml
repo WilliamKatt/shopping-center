@@ -1,0 +1,75 @@
+<view class="topwrap">
+    <view class="addrview" wx:if="{{myAddr.userName==null}}">
+        <button class="btnAddr" bindtap="handleAddr">
+            设置收货地址
+        </button>
+    </view>
+
+    <view class="addrcontent" bindtap="handleAddr" wx:else>
+        <view class="nameandaddr">
+            <view class="username">姓名:{{myAddr.userName}}</view>
+            <view class="useraddr">{{myAddr.provinceName+myAddr.cityName+myAddr.countyName+myAddr.detailInfo}}</view>
+        </view>
+        <view class="phone">
+            {{myAddr.telNumber}}
+        </view>
+    </view>
+</view>
+
+
+<scroll-view scroll-y class="catlstcontainer">
+    <view class="catlsttitle">
+        购物车商品列表
+    </view>
+      
+    <view class="catlstcontent" wx:for="{{cartlist}}" wx:key="goods_id"
+    >
+        <view class="contentleft">
+            <checkbox-group bindchange="handleSelectOne"
+            data-goodsid="{{item.goods_id}}">
+            <checkbox checked="{{item.checked}}"></checkbox>
+            </checkbox-group>
+        </view>
+        <view class="contentcenter">
+            <image class="centerimg" src="{{item.pics[0].pics_mid}}" mode="widthFix" />
+        </view>
+        <view class="contentright">
+            <view class="righttop">
+                {{item.goods_name}}
+            </view>
+            <view class="rightbottom">
+                <view class="goodsprice">¥{{item.goods_price}}.00</view>
+                <view class="bottomright">
+                    <view class="numedit" bindtap="handleNumCalc" data-op="1"
+                    data-goodsid="{{item.goods_id}}">+</view>
+                    <view class="goodsnum">{{item.num}}</view>
+                    <view class="numedit" bindtap="handleNumCalc" data-op="-1"
+                    data-goodsid="{{item.goods_id}}">-</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view wx:if="{{!cartlist||cartlist.length==0}}">
+        <image class="cartemptyimg" src="http://122.112.158.78/cart/cart-empty.png" mode="widthFix"/>
+    </view>
+      
+</scroll-view>
+
+<view class="bottombar">
+    <view class="leftbar">
+        <checkbox-group bindchange="handleSelectAll">
+            <checkbox class="selectall" checked="{{allChecked}}">全选</checkbox>
+        </checkbox-group> 
+    </view>
+    <view class="centerbar">
+        <view class="totalwrap">
+            合计: ¥{{totalPrice}}.00
+        </view>
+        <view class="yunfei">
+            包含运费
+        </view>
+    </view>
+    <view class="rightbar" bindtap="handleJieSuan">
+        结算({{totalNum}})
+    </view>
+</view>

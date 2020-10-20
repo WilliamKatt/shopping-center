@@ -1,0 +1,16 @@
+/*通过本地项目目录下的images/iconfont中的5个文件加载*/
+/*@import './images/iconfont/iconfont.wxss';*/
+/*通过远程服务器加载样式字体等文件*/
+@import './images/iconfont/fontremote.wxss';
+page,view,text,image,swiper,swiper-item,navigator{
+  margin: 0;
+  padding: 0;
+  /*可以使width作为容器的实际宽度，
+  如果不使用这个样式，那么width设置的是
+  内容区的宽度*/
+  box-sizing: border-box;
+}
+page{
+  --themeColor:#f9544d;
+}
+.bdbtm-ccc{border-bottom:1px solid #ccc;}

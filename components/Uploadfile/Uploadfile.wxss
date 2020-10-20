@@ -1,0 +1,27 @@
+.uldfilewrap {
+  display: flex;
+}
+.uldfilewrap .choosebtn {
+  margin: 0;
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.uldfilewrap .selectimgswrap {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  margin-left: 20rpx;
+}
+.uldfilewrap .selectimgswrap .selectedimg {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.uldfilewrap .selectimgswrap .close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}

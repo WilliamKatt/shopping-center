@@ -1,0 +1,44 @@
+/* pages/category/index.wxss */
+page {
+  height: 100%;
+}
+.catecontainer {
+  /*计算公式中-号两边需要空格，否则算式不起作用*/
+  height: calc(100vh - 100rpx);
+  display: flex;
+}
+.catecontainer .leftmenu {
+  flex: 2;
+}
+.catecontainer .leftmenu view {
+  padding: 20rpx 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+.catecontainer .leftmenu .active {
+  color: var(--themeColor);
+  border-left: 4rpx solid currentColor;
+}
+.catecontainer .rightmenu {
+  flex: 5;
+}
+.catecontainer .rightmenu .rightmenugroup .itemtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx 0;
+}
+.catecontainer .rightmenu .rightmenugroup .itemlist {
+  display: flex;
+  flex-wrap: wrap;
+}
+.catecontainer .rightmenu .rightmenugroup .itemlist navigator {
+  width: 33.33%;
+  text-align: center;
+  padding: 10rpx 0;
+}
+.catecontainer .rightmenu .rightmenugroup .itemlist navigator image {
+  width: 50%;
+}

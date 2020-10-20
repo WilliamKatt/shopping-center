@@ -1,0 +1,18 @@
+<view class="wuliulist">
+    <view class="row {{wuliu.length>1&&index==wuliu.length-2?'bdbtmccc':''}}" 
+    wx:for="{{wuliu}}" 
+    wx:key="buzhou">
+        <view class="title">
+            {{item.buzhou}}
+        </view>
+        <view class="item" wx:for="{{item.list}}" wx:key="date"
+        wx:for-item="lst">
+            <view class="content">
+                {{lst.info}}
+            </view>
+            <view class="date">
+                {{lst.date}}
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,54 @@
+<!--pages/order_detail/index.wxml-->
+<view class="titlewrap">
+    <view class="ordernumber titlerow">
+        订单编号: {{clickOrder.order_number}}
+    </view>
+    <view class="orderprice titlerow">
+        订单总价: ¥{{clickOrder.order_price}}.00元
+    </view>
+    <view class="orderdate titlerow">
+        创建日期: {{clickOrder.create_time}}
+    </view>
+    <view class="consignee titlerow">
+        收货人: {{clickOrder.consignee}}
+    </view>
+    <view class="phone titlerow">
+        联系电话: {{clickOrder.consignee_phone}}
+    </view>
+    <view class="addr titlerow">
+        收货地址: {{clickOrder.consignee_addr}}
+    </view>
+    <view class="postal titlerow">
+        邮编: {{clickOrder.consignee_postal}}
+    </view>
+    <navigator url="/pages/selectwuliu/index?kd=SF&kdno=210001633605" class="titlerow">
+        物流查询
+    </navigator>
+</view>
+<view class="btnwrap">
+    <button class="payBtn" wx:if="{{clickOrder.order_pay==0}}" bindtap="handlePay">支付</button>
+</view>
+
+<view class="goodswrap">
+    <navigator
+    url="/pages/goods_detail/index?goods_id={{item.goods_id}}"
+     class="goodsrow {{index<clickOrder.goods.length?'border-bottom':''}}" 
+    wx:for="{{clickOrder.goods}}" wx:key="goods_id">
+        <view class="goodslogo">
+            <image class="logo" 
+            src="{{item.goods_small_logo}}" mode="widthFix"/>
+              
+        </view>
+        <view class="goodscontent">
+            <view class="goodsname">
+                {{item.goods_name}}
+            </view>
+            <view class="goodsprice">
+                ¥{{item.goods_price}}.00
+            </view>
+            <view class="goodsnum">
+                X {{item.goods_number}}
+            </view>
+        </view>
+    </navigator>
+</view>

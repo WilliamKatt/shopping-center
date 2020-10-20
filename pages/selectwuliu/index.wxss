@@ -1,0 +1,28 @@
+page {
+  background-color: #ccc;
+}
+.wuliulist {
+  width: 90vw;
+  background-color: #fff;
+  margin: 20rpx auto;
+  padding: 16rpx;
+}
+.wuliulist .row {
+  margin-top: 6rpx;
+}
+.wuliulist .row .title {
+  height: 50rpx;
+  font-size: 32rpx;
+}
+.wuliulist .row .item {
+  padding: 6rpx 0;
+}
+.wuliulist .row .item .content {
+  font-size: 24rpx;
+}
+.wuliulist .row .item .date {
+  font-size: 24rpx;
+}
+.bdbtmccc {
+  border-bottom: 2rpx solid #ccc;
+}

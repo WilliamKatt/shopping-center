@@ -1,0 +1,132 @@
+/* pages/cart/index.wxss */
+.topwrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 162rpx;
+  font-size: 32rpx;
+}
+.topwrap .addrview {
+  padding: 20rpx 0;
+}
+.topwrap .addrview button.btnAddr {
+  border: 2rpx solid var(--themeColor);
+}
+.topwrap .addrcontent {
+  display: flex;
+  border-top: 2rpx solid #ccc;
+  border-bottom: 2rpx solid #ccc;
+}
+.topwrap .addrcontent .nameandaddr {
+  flex: 2;
+  padding: 16rpx;
+}
+.topwrap .addrcontent .phone {
+  flex: 1;
+  padding: 16rpx;
+}
+.catlstcontainer {
+  position: fixed;
+  left: 0;
+  top: 162rpx;
+  height: calc(100vh - 262rpx);
+  font-size: 32rpx;
+}
+.catlstcontainer .cartemptyimg {
+  width: 100%;
+}
+.catlstcontainer .catlsttitle {
+  color: var(--themeColor);
+  font-size: 32rpx;
+  font-weight: 600;
+  padding: 16rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.catlstcontainer .catlstcontent {
+  display: flex;
+}
+.catlstcontainer .catlstcontent .contentleft {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.catlstcontainer .catlstcontent .contentcenter {
+  flex: 2;
+}
+.catlstcontainer .catlstcontent .contentcenter .centerimg {
+  width: 96%;
+}
+.catlstcontainer .catlstcontent .contentright {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 16rpx;
+}
+.catlstcontainer .catlstcontent .contentright .righttop {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.catlstcontainer .catlstcontent .contentright .rightbottom {
+  display: flex;
+  justify-content: space-between;
+}
+.catlstcontainer .catlstcontent .contentright .rightbottom .bottomright {
+  display: flex;
+}
+.catlstcontainer .catlstcontent .contentright .rightbottom .bottomright .numedit {
+  border: 2rpx solid #ccc;
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.catlstcontainer .catlstcontent .contentright .rightbottom .bottomright .goodsnum {
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottombar {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 100rpx;
+  font-size: 32rpx;
+}
+.bottombar .leftbar {
+  flex: 1;
+  padding-left: 24rpx;
+  display: flex;
+  align-items: center;
+}
+.bottombar .centerbar {
+  flex: 3;
+  padding-right: 16rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bottombar .centerbar .totalwrap {
+  text-align: right;
+}
+.bottombar .centerbar .yunfei {
+  text-align: right;
+}
+.bottombar .rightbar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--themeColor);
+  color: #fff;
+}

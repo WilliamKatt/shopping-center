@@ -1,0 +1,12 @@
+<view class="uldfilewrap">
+    <button class="choosebtn" bindtap="handelSelectImg">+</button>
+    <view class="selectimgswrap" wx:for="{{selectImgs}}"
+    wx:key="*this" bindtap="handleDelete"
+    data-index="{{index}}">
+        <image 
+        class="selectedimg" 
+        src="{{item}}" 
+        />
+        <icon class="close" type="clear" size="23" color="red" />
+    </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Uploadfile":"../../components/Uploadfile/Uploadfile"
+  },
+  "navigationBarTitleText": "意见反馈"
+}

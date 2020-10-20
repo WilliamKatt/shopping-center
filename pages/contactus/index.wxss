@@ -1,0 +1,16 @@
+/* pages/contactus/index.wxss */
+page {
+  background-color: #efefef;
+}
+.mainwrap {
+  margin: 20rpx auto;
+  width: 90%;
+  background-color: #fff;
+}
+.mainwrap .row {
+  padding: 20rpx;
+  font-size: 32rpx;
+}
+.mainwrap .row:nth-child(-n+3) {
+  border-bottom: 2rpx solid #ccc;
+}

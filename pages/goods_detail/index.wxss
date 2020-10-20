@@ -1,0 +1,90 @@
+/* pages/goods_detail/index.wxss */
+.gdsdtlswiper {
+  width: 100%;
+  height: 60vw;
+}
+.gdsdtlswiper .swiperitem {
+  text-align: center;
+}
+.gdsdtlswiper .swiperitem .swiperimage {
+  width: 60%;
+}
+.midlayer {
+  padding: 20rpx;
+}
+.midlayer .gdsprice {
+  color: var(--themeColor);
+  font-size: 32rpx;
+  font-weight: 600;
+  padding: 16rpx 0;
+}
+.midlayer .gdsinfo {
+  display: flex;
+  border-top: 2rpx solid #ccc;
+  border-bottom: 2rpx solid #ccc;
+  padding: 16rpx 0;
+}
+.midlayer .gdsinfo .gdsname {
+  flex: 5;
+  font-size: 32rpx;
+  font-weight: 400;
+}
+.midlayer .gdsinfo .collection {
+  flex: 1;
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: 400;
+  border-left: 4rpx solid var(--themeColor);
+}
+.midlayer .gdsinfo .collection .iconfont {
+  font-size: 32rpx;
+}
+.gdstoolbar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  /*nth-child(2n) 取偶数位标签
+      nth-child(2n-1)取奇数位标签
+      nth-child(n+位置)取从指定位置开始到末尾的标签
+      nth-child(-n+位置)指从第一个标签开始取到指定位置的标签
+      :nth-last-child(-n+个数)从最后一个开始往左取指定个数*/
+}
+.gdstoolbar .tbitem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+}
+.gdstoolbar .tbitem .iconfont {
+  font-size: 32rpx;
+}
+.gdstoolbar .tbitem:nth-child(-n+3) {
+  flex: 1;
+  position: relative;
+}
+.gdstoolbar .tbitem:nth-child(-n+3) button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.gdstoolbar .tbitem:nth-last-child(1) {
+  flex: 2;
+  background-color: #eb4450;
+  color: #fff;
+}
+.gdstoolbar .tbitem:nth-last-child(2) {
+  flex: 2;
+  background-color: #ffa500;
+  color: #fff;
+}
+.collect-color {
+  color: var(--themeColor);
+}

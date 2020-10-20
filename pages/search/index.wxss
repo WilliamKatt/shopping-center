@@ -1,0 +1,35 @@
+/* pages/search/index.wxss */
+.inputwrap {
+  padding: 20rpx;
+}
+.inputwrap input {
+  border: 12rpx solid #ccc;
+  font-size: 24rpx;
+  height: 80rpx;
+}
+.listwrap .row {
+  display: flex;
+  padding: 20rpx;
+}
+.listwrap .row .thumbnail {
+  flex: 1;
+}
+.listwrap .row .right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.listwrap .row .right .goodsname {
+  font-size: 28rpx;
+  padding: 0 0 0 16rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.listwrap .row .right .goodsprice {
+  text-align: right;
+  font-size: 32rpx;
+  color: var(--themeColor);
+}

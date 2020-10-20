@@ -1,0 +1,52 @@
+<view class="topwrap">
+    <view class="addrcontent">
+        <view class="nameandaddr">
+            <view class="username">姓名:{{myAddr.userName}}</view>
+            <view class="useraddr">{{myAddr.consignee_addr}}</view>
+        </view>
+        <view class="phone">
+            {{myAddr.telNumber}}
+        </view>
+    </view>
+</view>
+
+
+<scroll-view scroll-y class="catlstcontainer">
+    <view class="catlstcontent" wx:for="{{cartlist}}" wx:key="goods_id"
+    >
+        <view class="contentcenter">
+            <image class="centerimg" src="{{item.pics[0].pics_mid}}" mode="widthFix" />
+        </view>
+        <view class="contentright">
+            <view class="righttop">
+                {{item.goods_name}}
+            </view>
+            <view class="rightbottom">
+                <view class="goodsprice">¥{{item.goods_price}}.00</view>
+                <view class="bottomright">
+                    <view class="goodsnum">X{{item.num}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+      
+</scroll-view>
+
+<view class="bottombar">
+    <view class="leftbar">
+    </view>
+    <view class="centerbar">
+        <view class="totalwrap">
+            合计: ¥{{totalPrice}}.00
+        </view>
+        <view class="yunfei">
+            包含运费
+        </view>
+    </view>
+    <view class="rightbar">
+        <button class="default" open-type="getUserInfo" 
+        bindgetuserinfo="handleGetUserInfo" plain></button>
+        支付({{totalNum}})
+    </view>
+</view>
+

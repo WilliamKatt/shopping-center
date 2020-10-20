@@ -1,0 +1,47 @@
+/* pages/category/index.wxss */
+page{
+    height: 100%;
+}
+.catecontainer{
+    /*计算公式中-号两边需要空格，否则算式不起作用*/
+    height: calc(100vh - 100rpx);
+    display: flex;
+    .leftmenu{
+        flex:2;
+        view{
+            padding: 20rpx 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000;
+        }
+        .active{
+            color:var(--themeColor);
+            border-left: 4rpx solid currentColor;
+        }
+    }
+    .rightmenu{
+        flex:5;
+        .rightmenugroup{
+            .itemtitle{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20rpx 0;
+            }
+            .itemlist{
+                display: flex;
+                flex-wrap: wrap;
+                navigator{
+                    width:33.33%;
+                    text-align: center;
+                    padding: 10rpx 0;
+                    image{
+                        width: 50%;
+                    }
+                    view{}
+                }
+            }
+        }
+    }
+}

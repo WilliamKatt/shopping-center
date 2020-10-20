@@ -1,0 +1,83 @@
+<view class="titlewrap">
+    <view class="btnitem" wx:if="{{!userInfo||userInfo.nickName==null}}">
+        <navigator class="btnlogin"  url="/pages/login/index" >
+        登录
+        </navigator>
+    </view>
+    <view class="logoitem" wx:else>
+        <image class="bgimg" src="{{userInfo.avatarUrl}}" mode="scaleToFill" />
+        <view class="userinfo">
+            <image class="logo" src="{{userInfo.avatarUrl}}" mode="widthFix" />
+            <view class="username">{{userInfo.nickName}}</view>
+        </view>
+    </view>
+</view>
+
+<view class="centerwrap">
+    <view class="contentwrap">
+        <view class="firstrow">
+            <view class="item" bindtap="handleToCollectList"
+            data-index="0">
+                <view class="num">{{collectCount}}</view>
+                <view class="itemname">收藏的商品</view>
+            </view>
+            <view class="item" bindtap="handleToCollectList"
+            data-index="1">
+                <view class="num">{{visitedCount}}</view>
+                <view class="itemname">我的足迹</view>
+            </view>
+            <!--<view class="item">
+                <view class="num">0</view>
+                <view class="itemname">收藏的商品</view>
+            </view>
+            <view class="item">
+                <view class="num">0</view>
+                <view class="itemname">我的足迹</view>
+            </view>-->
+        </view>
+
+        <view class="orderrow">
+            <view class="ordertitle">
+                我的订单
+            </view>
+            <view class="ordercontent">
+                <view bindtap="handleToOrderlist" data-type="1" class="orderitem">
+                    <view class="iconfont icon-order" style="font-size:36rpx;"></view>
+                    <view class="ordername">全部订单</view>
+                </view>
+                <view bindtap="handleToOrderlist" data-type="2" class="orderitem">
+                    <view class="iconfont icon-daifukuan"></view>
+                    <view class="ordername">待付款</view>
+                </view>
+                <view bindtap="handleToOrderlist" data-type="3" class="orderitem">
+                    <view class="iconfont icon-wuliu"></view>
+                    <view class="ordername">待收货</view>
+                </view>
+                <view bindtap="handleToOrderlist" data-type="4" class="orderitem">
+                    <view class="iconfont icon-tuikuan"></view>
+                    <view class="ordername">退款/退货</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="addressrow row" bindtap="handleAddr">
+            管理收货地址
+        </view>
+
+        <view class="contactrow row">
+            <text>联系客服</text>
+            <text>400-888-888</text>
+        </view>
+        <view class="feedbackrow row" bindtap="handleToFeedback">
+            意见反馈
+        </view>
+        <view class="contactusrow row" bindtap="handleToContactUs">
+            联系我们
+        </view>
+        <view class="sharesrow row" bindtap="handleToShare">
+            把应用推荐给他人
+        </view>
+    </view>
+</view>
+
+

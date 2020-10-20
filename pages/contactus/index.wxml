@@ -1,0 +1,15 @@
+<!--pages/contactus/index.wxml-->
+<view class="mainwrap">
+    <view class="row">
+        电话: 0731-88888888
+    </view>
+    <view class="row">
+        手机: 13988888888
+    </view>
+    <view class="row">
+        邮箱: lingqigou@qq.com
+    </view>
+    <view class="row">
+        微信公众号: 零七购
+    </view>
+</view>

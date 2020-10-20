@@ -1,0 +1,56 @@
+/* pages/order_detail/index.wxss */
+page{
+    background-color: #ccc;
+}
+.titlewrap {
+    margin: 20rpx auto;
+    width:90vw;
+    background-color: #fff;
+    .titlerow {
+        padding: 20rpx;
+        font-size: 24rpx;
+        &:nth-child(-n+6){
+            border-bottom: 2rpx solid #ccc;
+        }
+    }
+}
+.btnwrap{
+    margin: 20rpx auto;
+    width: 90vw;
+    .payBtn{
+        margin: 0;
+        width: 100%;
+        background-color: var(--themeColor);
+        color:#fff
+    }
+}
+
+
+.goodswrap {
+    padding: 0 20rpx;
+    margin: 20rpx auto;
+    width:90vw;
+    background-color: #fff;
+    .goodsrow {
+       display: flex;
+      .goodslogo {
+        flex:1;
+        .logo {
+            width: 100%;
+        }
+      }
+      .goodscontent {
+          flex:3;
+          font-size: 24rpx;
+          text-align: right;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          .goodsname{
+              text-align: left;
+          }
+      }
+    }
+}
+
+.border-bottom{border-bottom: 2rpx solid #ccc;}
