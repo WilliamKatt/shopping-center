@@ -40,7 +40,7 @@
             合计: ¥{{totalPrice}}.00
         </view>
         <view class="yunfei">
-            你吃鸡巴吗
+            包含运费
         </view>
     </view>
     <view class="rightbar">
