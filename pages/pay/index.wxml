@@ -40,7 +40,7 @@
             合计: ¥{{totalPrice}}.00
         </view>
         <view class="yunfei">
-            包含运费
+            包含
         </view>
     </view>
     <view class="rightbar">
