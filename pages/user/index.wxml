@@ -38,7 +38,7 @@
 
         <view class="orderrow">
             <view class="ordertitle">
-                我的订单
+                my订单
             </view>
             <view class="ordercontent">
                 <view bindtap="handleToOrderlist" data-type="1" class="orderitem">
